@@ -1,5 +1,7 @@
 # opa-snyk-labs-iac
 
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/Vulnetix/opa-snyk-labs-iac)
+
 Vulnetix CLI-compatible OPA custom rules for Infrastructure-as-Code security checks, inspired by the [Snyk Labs IaC-to-Cloud example custom rules](https://github.com/snyk-labs/iac-to-cloud-example-custom-rules).
 
 ## Clean-room development
