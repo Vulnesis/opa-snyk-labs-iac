@@ -1,6 +1,6 @@
 # opa-snyk-labs-iac
 
-[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/Vulnetix/opa-snyk-labs-iac)
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/Vulnesis/opa-snyk-labs-iac)
 
 Vulnesis CLI-compatible OPA custom rules for Infrastructure-as-Code security checks, inspired by the [Snyk Labs IaC-to-Cloud example custom rules](https://github.com/snyk-labs/iac-to-cloud-example-custom-rules).
 
@@ -47,10 +47,10 @@ All `.rego` files live under `rules/` so the Vulnesis CLI can discover and load 
 
 ```bash
 # Use alongside built-in rules
-vulnesis scan --rule Vulnesis/opa-snyk-labs-iac
+vulnetix scan --rule Vulnesis/opa-snyk-labs-iac
 
 # Use only these custom rules (no built-ins)
-vulnesis scan --rule Vulnesis/opa-snyk-labs-iac --disable-default-rules
+vulnetix scan --rule Vulnesis/opa-snyk-labs-iac --disable-default-rules
 ```
 
 ## License
