@@ -1,6 +1,6 @@
 # Intent: S3 bucket ACL must be private.
 # Reference: Snyk Labs S3_BUCKET_ACL rule.
-# Clean-room implementation for the Vulnetix CLI input model.
+# Clean-room implementation for the Vulnesis CLI input model.
 
 package vulnetix.rules.snyk_s3_bucket_acl
 

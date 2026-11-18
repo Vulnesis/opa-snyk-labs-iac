@@ -1,4 +1,4 @@
-# Helper functions for Vulnetix IaC rules.
+# Helper functions for Vulnesis IaC rules.
 # Not a rule — no metadata/findings exported.
 
 package vulnetix.snyk_labs.helpers

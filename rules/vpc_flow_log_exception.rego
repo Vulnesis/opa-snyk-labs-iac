@@ -1,6 +1,6 @@
 # Intent: VPC flow logs required unless the VPC carries an exemption tag.
 # Reference: Snyk Labs VPC_FLOW_LOG_EXCEPTION rule.
-# Clean-room implementation for the Vulnetix CLI input model.
+# Clean-room implementation for the Vulnesis CLI input model.
 
 package vulnetix.rules.snyk_vpc_flow_log
 

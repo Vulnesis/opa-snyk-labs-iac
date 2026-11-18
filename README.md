@@ -1,16 +1,16 @@
 # opa-snyk-labs-iac
 
-[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/Vulnetix/opa-snyk-labs-iac)
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/Vulnesis/opa-snyk-labs-iac)
 
-Vulnetix CLI-compatible OPA custom rules for Infrastructure-as-Code security checks, inspired by the [Snyk Labs IaC-to-Cloud example custom rules](https://github.com/snyk-labs/iac-to-cloud-example-custom-rules).
+Vulnesis CLI-compatible OPA custom rules for Infrastructure-as-Code security checks, inspired by the [Snyk Labs IaC-to-Cloud example custom rules](https://github.com/snyk-labs/iac-to-cloud-example-custom-rules).
 
 ## Clean-room development
 
-These rules were produced using a **clean-room approach**. The original Snyk Labs rules were consulted only to understand the *intent* of each security check. All Rego implementations were then written independently from scratch, targeting the Vulnetix CLI's text-scanning input model (`input.file_contents`) rather than Snyk's `snyk.resources()` / `snyk.relates()` APIs.
+These rules were produced using a **clean-room approach**. The original Snyk Labs rules were consulted only to understand the *intent* of each security check. All Rego implementations were then written independently from scratch, targeting the Vulnesis CLI's text-scanning input model (`input.file_contents`) rather than Snyk's `snyk.resources()` / `snyk.relates()` APIs.
 
 Key differences from the upstream Snyk Labs implementations:
 
-- **Input model**: Vulnetix provides raw file contents as `input.file_contents` (a map of file path to file text). Rules scan this text directly using regex and string operations.
+- **Input model**: Vulnesis provides raw file contents as `input.file_contents` (a map of file path to file text). Rules scan this text directly using regex and string operations.
 - **Resource parsing**: Terraform HCL blocks are parsed via regex-based matching (`helpers.resource_blocks`), not through a structured resource graph.
 - **Cross-resource joins**: Related resources (e.g. `aws_vpc` + `aws_flow_log`) are linked by matching resource name references across files, replacing Snyk's `snyk.relates()` join API.
 
@@ -41,16 +41,16 @@ opa-snyk-labs-iac/
 └── README.md
 ```
 
-All `.rego` files live under `rules/` so the Vulnetix CLI can discover and load them automatically.
+All `.rego` files live under `rules/` so the Vulnesis CLI can discover and load them automatically.
 
 ## Usage
 
 ```bash
 # Use alongside built-in rules
-vulnetix scan --rule Vulnetix/opa-snyk-labs-iac
+vulnesis scan --rule Vulnesis/opa-snyk-labs-iac
 
 # Use only these custom rules (no built-ins)
-vulnetix scan --rule Vulnetix/opa-snyk-labs-iac --disable-default-rules
+vulnesis scan --rule Vulnesis/opa-snyk-labs-iac --disable-default-rules
 ```
 
 ## License

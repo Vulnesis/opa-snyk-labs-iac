@@ -1,6 +1,6 @@
 # Intent: IAM account password policy must enforce a minimum length.
 # Reference: Snyk Labs NEW_PASSWORD_POLICY rule.
-# Clean-room implementation for the Vulnetix CLI input model.
+# Clean-room implementation for the Vulnesis CLI input model.
 
 package vulnetix.rules.snyk_password_policy
 

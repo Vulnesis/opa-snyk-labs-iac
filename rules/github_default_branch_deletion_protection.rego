@@ -1,6 +1,6 @@
 # Intent: GitHub default branch must be protected from deletion.
 # Reference: Snyk Labs GITHUB_DEFAULT_BRANCH_DELETION_PROTECTION rule.
-# Clean-room implementation for the Vulnetix CLI input model.
+# Clean-room implementation for the Vulnesis CLI input model.
 
 package vulnetix.rules.snyk_github_branch_protection
 

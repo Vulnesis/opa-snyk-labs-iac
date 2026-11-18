@@ -1,6 +1,6 @@
 # Intent: EC2 instances must use an AMI from an approved allowlist.
 # Reference: Snyk Labs APPROVED_AMIS rule.
-# Clean-room implementation for the Vulnetix CLI input model.
+# Clean-room implementation for the Vulnesis CLI input model.
 
 package vulnetix.rules.snyk_approved_amis
 

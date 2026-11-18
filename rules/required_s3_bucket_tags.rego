@@ -1,6 +1,6 @@
 # Intent: S3 buckets must declare owner and classification tags.
 # Reference: Snyk Labs REQUIRED_S3_BUCKET_TAGS rule.
-# Clean-room implementation for the Vulnetix CLI input model.
+# Clean-room implementation for the Vulnesis CLI input model.
 
 package vulnetix.rules.snyk_s3_required_tags
 
